@@ -41,7 +41,7 @@ To end the program, press X.
 	if resp == "C":
 		print_rating()
 	elif resp == "F":
-		print "The " + subject_name + " with the highest rating is " + find_best() + "."
+		print "The " + subject_name + " with the highest rating is " + find_best()[0] + " with a rating of " + str(find_best()[1]) + "."
 	elif resp == "X":
 		sys.exit()
 	landing_page()
@@ -82,6 +82,7 @@ def find_best():
 		if average > best:
 			best = average
 			best_one = item
-	return best_one
+	listy_boi = [best_one, best]
+	return listy_boi
 
 landing_page()
