@@ -82,7 +82,7 @@ def find_best():
 		if average > best:
 			best = average
 			best_one = item
-	listy_boi = [best_one, best]
-	return listy_boi
+	output = [best_one, best]
+	return output
 
 landing_page()
